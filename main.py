@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Query
-from functions.scraping import scrap_website
+from functions.scraping_anterior import scrap_website
 
 #Criando uma instância do FastAPI
 app = FastAPI()
