@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Query
-from functions.scraping_anterior import scrap_website
+from functions.scraping_v3 import scrape_website
 
 #Criando uma instância do FastAPI
 app = FastAPI()
@@ -22,7 +22,7 @@ def get_producao(ano: int = Query(None, description = 'Ano de produção')):
         url = 'http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_02'
 
     #Chamando a função de scraping e passando a URL
-    website_content = scrap_website(url)
+    website_content = scrape_website(url)
 
     #Retornando o conteúdo da página
     return website_content
