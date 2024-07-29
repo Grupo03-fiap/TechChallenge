@@ -1,0 +1,4 @@
+curl -X GET "http://127.0.0.1:8000/api/2023/producao" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.e30.I_8pdROLRv_t4C3bIvuNbJA5W0E2nM8O2napySyskFA"
+
+token=
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.e30.I_8pdROLRv_t4C3bIvuNbJA5W0E2nM8O2napySyskFA
