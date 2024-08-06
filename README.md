@@ -9,4 +9,7 @@ O projeto utiliza técnicas de web scraping por meio do framework Selenium para 
 - Bibliotecas listadas no arquivo requirements.txt
 - Acesso à internet para a realização do web scraping
 
-
+### Como rodar a aplicação
+1. Instale as bibliotecas
+2. Execute a API
+3. Acesse a documentação da API em http://localhost:8000/docs para visualizar e testar os endpoints disponíveis
