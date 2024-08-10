@@ -13,49 +13,44 @@ Asseguramos que o ChromeDriver estivesse corretamente instalado e configurado, j
 
 ### Uso
 Inicialização da API
+
 Para iniciar o servidor da API, execute o seguinte comando:
 
-bash
-Copy code
 uvicorn main:app --reload
 Isso iniciará o servidor localmente em http://localhost:8000.
 
 Endpoints Disponíveis
-Geração de Token
 
-Método: GET
-Endpoint: /token
-Descrição: Gera um token de acesso para o uso da API.
+* Geração de Token
+- Método: GET
+- Endpoint: /token
+- Descrição: Gera um token de acesso para o uso da API.
+
 Exemplo de Uso:
 
 Para obter um token de acesso, use o seguinte comando curl:
-
-bash
-Copy code
 curl -X GET "http://localhost:8000/token"
-Consulta Produção
 
-Método: GET
-Endpoint: /api/2023/producao
-Descrição: Realiza a raspagem de dados na aba de produção, filtrando pelo ano de 2023.
+* Consulta Produção
+- Método: GET
+- Endpoint: /api/2023/producao
+- Descrição: Realiza a raspagem de dados na aba de produção, filtrando pelo ano de 2023.
+
 Exemplo de Uso:
 
 Para consultar dados de produção para o ano de 2023, use o seguinte comando curl:
 
-bash
-Copy code
 curl -X GET "http://localhost:8000/api/2023/producao"
-Consulta Importação
 
-Método: GET
-Endpoint: /api/2023/api/db/consulta/2023/importacao/espumantes
-Descrição: Realiza uma consulta na aba de importação, filtrando por ano e pelo tipo de vinho (espumantes).
+* Consulta Importação
+- Método: GET
+- Endpoint: /api/2023/api/db/consulta/2023/importacao/espumantes
+- Descrição: Realiza uma consulta na aba de importação, filtrando por ano e pelo tipo de vinho (espumantes).
+
 Exemplo de Uso:
 
 Para consultar dados de importação de espumantes para o ano de 2023, use o seguinte comando curl:
 
-bash
-Copy code
 curl -X GET "http://localhost:8000/api/2023/api/db/consulta/2023/importacao/espumantes
 
 ### Testes:
