@@ -2,7 +2,7 @@
 Este projeto foi desenvolvido pelo Grupo03 - FIAP como parte do TechChallenge da Pós-Tech em Engenharia de Machine Learning. O objetivo foi criar uma API utilizando FastAPI para realizar operações de web scraping no site da EMBRAPA, focando na extração de dados relacionados à vitivinicultura.
 
 ### Instalação
-Clonagem do Repositório:
+**Clonagem do Repositório:**
 Primeiramente, clonamos o repositório do GitHub para o nosso ambiente local.
 
 ### Instalação das Dependências:
@@ -12,40 +12,46 @@ Após clonar o repositório, criamos um ambiente virtual e instalamos todas as d
 Asseguramos que o ChromeDriver estivesse corretamente instalado e configurado, já que ele é essencial para o funcionamento do Selenium, uma das ferramentas utilizadas no processo de web scraping.
 
 ### Uso
-Inicialização da API
+**Inicialização da API**
 
 Para iniciar o servidor da API, execute o seguinte comando:
 
 uvicorn main:app --reload
-Isso iniciará o servidor localmente em http://localhost:8000.
+Isso iniciará o servidor localmente em `http://localhost:8000`.
 
-Endpoints Disponíveis
+**Endpoints Disponíveis**
 
 * Geração de Token
+```
 - Método: GET
 - Endpoint: /token
 - Descrição: Gera um token de acesso para o uso da API.
+```
 
 Exemplo de Uso:
 
 Para obter um token de acesso, use o seguinte comando curl:
-curl -X GET "http://localhost:8000/token"
+`curl -X GET "http://localhost:8000/token"`
 
 * Consulta Produção
+```
 - Método: GET
 - Endpoint: /api/2023/producao
 - Descrição: Realiza a raspagem de dados na aba de produção, filtrando pelo ano de 2023.
+```
 
 Exemplo de Uso:
 
 Para consultar dados de produção para o ano de 2023, use o seguinte comando curl:
 
-curl -X GET "http://localhost:8000/api/2023/producao"
+`curl -X GET "http://localhost:8000/api/2023/producao"`
 
 * Consulta Importação
+```
 - Método: GET
 - Endpoint: /api/2023/api/db/consulta/2023/importacao/espumantes
 - Descrição: Realiza uma consulta na aba de importação, filtrando por ano e pelo tipo de vinho (espumantes).
+```
 
 Exemplo de Uso:
 
