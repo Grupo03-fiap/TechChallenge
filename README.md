@@ -1,31 +1,31 @@
-###API de Web Scraping de Dados de Vitivinicultura da EMBRAPA
+### API de Web Scraping de Dados de Vitivinicultura da EMBRAPA
 Este projeto foi desenvolvido pelo Grupo03 - FIAP como parte do TechChallenge da Pós-Tech em Engenharia de Machine Learning. O objetivo foi criar uma API utilizando FastAPI para realizar operações de web scraping no site da EMBRAPA, focando na extração de dados relacionados à vitivinicultura.
 
-###Instalação
+### Instalação
 Clonagem do Repositório:
 Primeiramente, clonamos o repositório do GitHub para o nosso ambiente local.
 
-###Instalação das Dependências:
+### Instalação das Dependências:
 Após clonar o repositório, criamos um ambiente virtual e instalamos todas as dependências necessárias para o projeto, conforme listadas no arquivo requirements.txt.
 
-###Configuração do Ambiente:
+### Configuração do Ambiente:
 Asseguramos que o ChromeDriver estivesse corretamente instalado e configurado, já que ele é essencial para o funcionamento do Selenium, uma das ferramentas utilizadas no processo de web scraping.
 
-###Uso
+### Uso
 Inicialização da API:
 Para iniciar a API, utilizamos o Uvicorn, um servidor ASGI para Python, que nos permitiu rodar o aplicativo FastAPI localmente.
 
-###Endpoints Disponíveis:
+### Endpoints Disponíveis:
 Extração de Dados de Vitivinicultura:
 Desenvolvemos endpoints para a extração dos dados de vitivinicultura diretamente do site da EMBRAPA, permitindo que os dados fossem acessados e consumidos através de requisições HTTP.
 
-###Testes:
+### Testes:
 Para testar a API, utilizamos o Postman, que nos permitiu simular requisições HTTP e validar as respostas da API em ambiente local.
 
-###Documentação da API
+### Documentação da API
 Preparamos uma documentação interativa da API utilizando o Swagger, acessível através do endereço http://localhost:8000/docs. Isso facilitou a exploração dos endpoints e permitiu uma visualização clara das funcionalidades disponíveis.
 
-###Plano de Deploy
+### Plano de Deploy
 1. Preparação do Ambiente
 1.1. Configuração do Servidor
 Para o deploy da API, optamos por um servidor VPS, levando em consideração as necessidades de escalabilidade e desempenho. O plano inclui conectar ao servidor via SSH e atualizar o sistema para garantir que todos os pacotes estejam na versão mais recente.
