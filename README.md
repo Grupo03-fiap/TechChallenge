@@ -1,4 +1,4 @@
-## API de Web Scraping de Dados de Vitivinicultura da EMBRAPA
+## API DE WEB SCRAPING DE DADOS DE VITIVINICULTURA DA EMBRAPA
 Este projeto foi desenvolvido pelo Grupo03 - FIAP como parte do TechChallenge da Pós-Tech em Engenharia de Machine Learning. O objetivo foi criar uma API utilizando FastAPI para realizar operações de web scraping no site da EMBRAPA, focando na extração de dados relacionados à vitivinicultura.
 
 ### Instalação
